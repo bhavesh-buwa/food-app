@@ -1,0 +1,32 @@
+body {
+    font-family: "Roboto", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo { 
+    background: url('./images/logo.svg') no-repeat;
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+    background-size: 120px 80px;
+    background-position: -20px -5px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 48px;
+    font-size: 16px;
+    font-weight: bold;
+}
