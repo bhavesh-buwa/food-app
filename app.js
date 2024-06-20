@@ -1,10 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
+import { Header } from "./src/components/header/index";
+import Body from "./src/components/body";
 
 const App = () => {
   return (
     <div>
       <Header />
+      <Body />
     </div>
   );
 };
@@ -12,19 +15,3 @@ const App = () => {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<App />);
-
-const Header = () => {
-  return (
-    <header>
-      <div className="logo"></div>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact</li>
-          <li>Cart</li>
-        </ul>
-      </nav>
-    </header>
-  );
-};
